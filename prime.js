@@ -1,18 +1,20 @@
-let factors=0;
-let number=6
-for(let i=0;i<=number;i++)
-{
-  if(i%number==0)
-{
-  factor++;
+function prime(num){
+let counter=0;
+    for(let i=0;i<=num;i++){
+        if(num%i==0){
+           counter++;
+        }
+     }
+     if(counter==2){
+        return false;
+     }
+      return true;
 }
+
+let answer=prime(13);
+if(answer==true){
+   console.log("prime");
 }
-if(facotrs==5)
-{
-  console.log("prime")
-}
-else
-{
-  console.log("not prime")
-}
-  
+else{
+    console.log("Not prime");
+
